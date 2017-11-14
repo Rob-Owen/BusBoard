@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Departure boards</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="departures.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<h1 id="title">BusBoard</h1>
+<div id="submitContainer">
+    <form id="postcodeSubmit";>
+        <input type="text" name="postcode" id="postcode" placeholder="Enter your postcode">
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</div>
+<div id="space"></div>
+<div id="resultsContainer">
+    <div id="results">
+        <h2>Results</h2>
+        <h3>Example stop 1</h3>
+        <ul>
+            <li>2 minutes: 123 to Example Street</li>
+            <li>3 minutes: 456 to Fantasy Land</li>
+        </ul>
+        <h3>Example stop 2</h3>
+        <ul>
+            <li>1 minute: 123 to Example Street</li>
+            <li>4 minutes: 456 to Fantasy Land</li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    $.ready(setSubmit())
+</script>
+</html>
